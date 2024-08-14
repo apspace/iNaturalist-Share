@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/Lato-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/Lato-Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#fetch-btn, #download-btn {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#canvas-container {
+    margin-top: 20px;
+    position: relative;
+    width: 540px;
+    height: 960px;
+}
