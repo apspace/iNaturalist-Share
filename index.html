@@ -9,13 +9,12 @@
 <body>
     <h1>iNaturalist Share</h1>
     <input type="text" id="observation-url" placeholder="Enter observation URL">
-    <button id="fetch-btn">Create Image</button>
+    <button id="fetch-btn">Generate Image</button>
 
-    <div id="canvas-container">
-        <canvas id="observation-canvas"></canvas>
-    </div>
+    <!-- Container for displaying the final image -->
+    <div id="image-container"></div>
 
-    <button id="download-btn" style="display: none;">Download Image</button>
+    <canvas id="observation-canvas" style="display:none;"></canvas>
 
     <script src="script.js"></script>
 </body>

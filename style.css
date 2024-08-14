@@ -20,6 +20,10 @@ body {
     align-items: center;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1 {
     margin-bottom: 20px;
 }
@@ -35,9 +39,21 @@ input {
     margin-right: 10px;
 }
 
-#canvas-container {
-    margin-top: 20px;
-    position: relative;
-    width: 540px;
-    height: 960px;
+#image-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#image-container img {
+    /* max-width: 200px; */
+    max-height: 80vh;
+    height: auto;
+    width: auto;
+    object-fit: contain;
 }
