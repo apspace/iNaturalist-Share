@@ -1,6 +1,8 @@
 # iNaturalsu Share
 Simple tool that turns your nature observations from iNaturalist into beautiful, shareable images.
 
+![Example Image](assets/example.png)
+
 ## Features
 This tool fetches observation data from iNaturalist, generates a canvas with the observation image, location, and time, and converts it into a PNG image. The generated image is then displayed on the page, ready for sharing.
 
