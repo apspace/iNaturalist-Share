@@ -1,4 +1,4 @@
-# iNaturalsu Share
+# iNaturalist Share
 Simple tool that turns your nature observations from iNaturalist into beautiful, shareable images.
 
 ![Example Image](assets/example.png)
