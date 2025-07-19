@@ -8,7 +8,18 @@
 </head>
 <body>
     <h1>iNaturalist Share</h1>
+    <div class="form-row">
     <input type="text" id="observation-url" placeholder="Paste observation URL">
+    <select id="language-select">
+        <option value="en" selected>EN</option>
+        <option value="ru">RU</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="de">DE</option>
+        <option value="nl">NL</option>
+        <option value="zh">中文</option>
+    </select>
+    </div>
     <button id="fetch-btn">Generate Image</button>
 
     <!-- Container for displaying the final image -->

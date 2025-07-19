@@ -152,6 +152,7 @@ document.getElementById('fetch-btn').addEventListener('click', async () => {
     const observationUrl = document.getElementById('observation-url').value;
     const observationId = observationUrl.split('/').pop();
     const data = await fetchObservationData(observationId);
-    const translatedName = await fetchTaxonTranslation(data.taxon.id, 'ru');
+    const selectedLang = document.getElementById('language-select').value;
+    const translatedName = await fetchTaxonTranslation(data.taxon.id, selectedLang);
     drawObservationOnCanvas(data, translatedName);
 });
