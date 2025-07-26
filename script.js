@@ -111,9 +111,9 @@ function drawObservationOnCanvas(data, translatedName) {
         ctx.fillStyle = "#FFF";
         ctx.font = "800 72px Lato";
         ctx.textBaseline = "top";
-        ctx.fillText(`${data.taxon.preferred_common_name || 'N/A'}`, imageX + 40, imageY + 32);
+        ctx.fillText(`${translatedName || 'N/A'}`, imageX + 40, imageY + 32);
         ctx.font = "400 42px Lato";
-        ctx.fillText(`${translatedName || 'N/A'}`, imageX + 40, imageY + 32 + 72 + 16);
+        ctx.fillText(`${data.taxon.name || 'N/A'}`, imageX + 40, imageY + 32 + 72 + 16);
 
         // Loading location icon and displaying date/time
         const icon = new Image();
